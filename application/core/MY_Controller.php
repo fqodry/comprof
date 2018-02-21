@@ -12,8 +12,8 @@ class MY_Controller extends CI_Controller {
 		} catch (Exception $e) {
 			echo "Caught Exception: ".$e->getMessage()."\n";
 		}
-		$this->load->view('template/header');
+		$this->load->view('template/header', $pagedata);
 		$this->load->view($className.'/'.$viewFilename, $pagedata);
-		$this->load->view('template/footer');
+		$this->load->view('template/footer',$pagedata);
 	}
 }

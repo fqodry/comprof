@@ -13,6 +13,8 @@ class Home extends MY_Controller {
 	}
 
 	function welcome() {
-		$this->loadView('homepage');
+		$this->lang->load('home_lang');
+		$data['title'] = 'Company Profile Template - Qoddeclabs';
+		$this->loadView('homepage',$data);
 	}
 }

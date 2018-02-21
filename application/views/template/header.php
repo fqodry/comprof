@@ -23,17 +23,27 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/landing-page.min.css" rel="stylesheet">
 
-    <!-- RINCI Custom CSS -->
-    <link rel="stylesheet" href="assets/css/sieben.css">
+    <!-- Qoddeclabs Custom CSS -->
+    <link rel="stylesheet" href="assets/css/qoddeclabs.css">
   </head>
 
   <body>
 
     <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top" id="top-header">
+      <div class="container">
+        <div>
+          <a class="no-decor" href="" title="Indonesia">ID</a>&nbsp;/&nbsp;<a class="no-decor" href="" title="English">EN</a>
+        </div>
+        <div class="ml-auto">
+          <i class="fa fa-phone"></i> +6221-754-2749&emsp;<i class="fa fa-envelope"></i> hello@qoddeclabs.id
+        </div>
+      </div>
+    </nav>
     <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="">
-          <img src="assets/img/r-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">&nbsp;Rinci
+          <img src="assets/img/q-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">&nbsp;Qoddeclabs
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -41,23 +51,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="navbar-item"><a href="welcome" class="nav-link">Home</a></li>
-            <li class="navbar-item"><a href="javascript:void()" class="nav-link" onclick="alert('This feature will available soon.')">Products</a></li>
-            <li class="navbar-item"><a href="javascript:void()" class="nav-link" onclick="alert('This feature will available soon.')">Custom Design</a></li>
-            <li class="navbar-item"><a href="javascript:void()" class="nav-link" onclick="alert('This feature will available soon.')">Order Status</a></li>
+            <li class="navbar-item"><a href="home" class="nav-link">Home</a></li>
             <li class="navbar-item"><a href="about" class="nav-link">About Us</a></li>
-            <?php if(isset($this->session->userdata['loggedIn'])){
-              echo '
-                <li class="navbar-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" id="profileDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$sessUserFirstname.' '.$sessUserLastname.'</a>
-                  <div class="dropdown-menu" aria-labelledby="profileDropdown">
-                    <a href="dashboard" class="dropdown-item">My Dashboard</a>
-                    <a href="login/logout" class="dropdown-item">Logout</a>
-                  </div>
-                </li>';
-            } else {
-              echo '<li class="navbar-item"><a href="login" class="btn btn-primary"><i class="fa fa-user"></i> Sign In</a></li>';
-            } ?>
+            <li class="navbar-item"><a href="services" class="nav-link">Services</a></li>
+            <li class="navbar-item"><a href="customer" class="nav-link">Customer</a></li>
+            <li class="navbar-item"><a href="contact" class="nav-link">Contact Us</a></li>
           </ul>
         </div>
       </div>

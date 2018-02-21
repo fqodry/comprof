@@ -118,3 +118,7 @@ ul.no-li-style {
 a.no-decor {
 	text-decoration: none;
 }
+
+nav#top-header {
+	background-color: rgba(167,167,167,.5) !important;
+}
